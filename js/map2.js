@@ -37,6 +37,7 @@ $(document).ready(function() {
             // infoWindow.setContent("Location found.");
             // infoWindow.open(map);
             map.setCenter(pos);
+            map.setZoom(18)
           },
           () => {
             handleLocationError(true, infoWindow, map.getCenter());
