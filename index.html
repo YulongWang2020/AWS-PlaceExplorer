@@ -48,7 +48,7 @@
   </head>
   <body>
 	<div>
-		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		<nav class="navbar navbar-expand-md navbar-light bg-white">
 
 		<a class="navbar-brand" href="#">Place Explorer</a>
 
@@ -141,8 +141,8 @@
 
 			<form class="form-inline my-2 my-lg-0">
 				<input class="form-control mr-sm-2" type="search" placeholder="Filter" aria-label="Search">
-				<button id = "showmarker" class="btn btn-outline-primary my-2 my-sm-0" type="button">Show Marker in Current View</button>
-				<button data-toggle="modal" data-target=".bd-example-modal-lg" data-lat='10.85' data-lng='106.62' class="btn btn-outline-primary my-2 my-sm-0" type="button" style="margin-left: 7px">Upload Your Marker</button>
+				<button id = "showmarker" class="btn btn-outline-primary my-2 my-sm-0" type="button">Show Markers</button>
+				<button data-toggle="modal" data-target=".bd-example-modal-lg" data-lat='10.85' data-lng='106.62' class="btn btn-outline-primary my-2 my-sm-0" type="button" style="margin-left: 7px">Create Marker</button>
 			</form>
 
 
@@ -169,10 +169,12 @@
 
 
 						    <div class="modal-dialog modal-lg" role="document">
+						    	<label for="exampleFormControlTextarea1">Please Drag the Marker to Indicate the Location</label>
 						      <div class="modal-content">
 						        <div class="modal-body">
 						          <div class="row">
 						            <div class="col-md-12 modal_body_map">
+
 						              <div class="location-map" id="location-map">
 						                <div style="width: 600px; height: 400px;" id="map_canvas"></div>
 						              </div>
@@ -182,7 +184,7 @@
 					          </div>
 					        </div>
 
-					    <div><button id = "placepin"  class=" float-left btn btn-light my-2 my-sm-0" type="button" style="margin-bottom:15px !important">Click Here and Drag the Marker to Locate Your Picture</button> <button id = "upload" class="float-right btn btn-primary my-2 my-sm-0" type="submit" style="margin-bottom:15px !important">Upload</button></div>
+					    <div><button id = "placepin"  class=" float-left btn btn-light my-2 my-sm-0" type="button" style="margin-bottom:15px !important">Put a Marker</button> <button id = "upload" class="float-right btn btn-primary my-2 my-sm-0" type="submit" style="margin-bottom:15px !important">Upload</button></div>
 					  
 						</div>
 					</div>
