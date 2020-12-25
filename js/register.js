@@ -57,6 +57,8 @@ function registerButton() {
         input.setAttribute('type', "text")
         input.setAttribute('class', "form-control")
         input.setAttribute('id', "otptextinput")
+        input.setAttribute('placeholder',"Check email for OTP code")
+
         document.getElementById("otpverify").appendChild(input);
 
         var confirmbutton = document.createElement("button")
